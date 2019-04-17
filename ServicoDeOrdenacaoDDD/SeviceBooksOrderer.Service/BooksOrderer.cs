@@ -1,16 +1,15 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using ServiceBooksOrdererDDD.SeviceBooksOrderer.Model;
 using ServiceBooksOrdererDDD.SeviceBooksOrderer.Service.Service.Interface;
 
-namespace ServiceBooksOrdererDDD.SeviceBooksOrderer.Service
+namespace ServiceBooksOrdererDDD.SeviceBooksOrderer.Service 
 {
-    public class BooksOrderer : IBooksOrderer
+    public class SeviceBooksOrderer : IBooksOrderer
     {
-        List<BookModel> IBooksOrderer.BooksOrderer(List<BookModel> BookModel, int titleAsc, int authorAsc, int editAsc)
+        public List<BookModel> BooksOrderer(List<BookModel> BookModel, int titleAsc, int authorAsc, int editAsc)
         {
-            return null;
+            throw new NotImplementedException();
         }
     }
 }
