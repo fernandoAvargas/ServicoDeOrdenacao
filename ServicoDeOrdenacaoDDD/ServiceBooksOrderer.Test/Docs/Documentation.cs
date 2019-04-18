@@ -8,15 +8,7 @@ namespace ServicoDeOrdenacaoDDD.ServiceBooksOrderer.Test.Docs
 
         public static void DocSystem()
         {
-            /*            
-Sistema: Serviço de Ordenação de Livros
-Case: Ordenar uma Coleção de Livros 
-Desenvolvedor: 
-SolicitantesVROS
-Data
-Descrição
-Saida esperada dos testes
-    */
+
             Console.WriteLine("SISTEMA: SERVIÇO DE ORDENAÇÃO DE LIVROS".ToMarkdownHeader());
             Console.Write("");       
             Console.WriteLine("CASE: ORDERNAR UMA COLEÇÃO DE LIVROS CONFORME REQUISITOS E CENÁRIOS DE TESTES".ToMarkdownSubHeader());
