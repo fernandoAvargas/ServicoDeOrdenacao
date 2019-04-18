@@ -2,6 +2,7 @@
 using ServiceBooksOrdererDDD.SeviceBooksOrderer.Service.Service.Interface;
 using ServicoDeOrdenacaoDDD.ServiceBooksOrder.Infra.ListOrderer;
 using ServicoDeOrdenacaoDDD.ServiceBooksOrderer.Test;
+using ServicoDeOrdenacaoDDD.ServiceBooksOrderer.Test.Docs;
 using ServicoDeOrdenacaoDDD.SeviceBooksOrderer.Service.ServiceBooksOrderer.Design;
 using System;
 using System.Collections.Generic;
@@ -9,13 +10,20 @@ using System.Collections.Generic;
 namespace ServiceBooksOrdererDDD
 {
     class Program
-    {
+    {    
+
         static List<BookModel> ListBooks;
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Início dos testes...Aperte qualquer tecla para continuar");
-            Console.ReadKey();
+
+            #region Docs
+
+            Documentation.DocSystem();
+
+            #endregion
+
+            #region Objetos
 
             SeviceBooksOrderer.Service.SeviceBooksOrderer service = new SeviceBooksOrderer.Service.SeviceBooksOrderer();
 
@@ -24,17 +32,34 @@ namespace ServiceBooksOrdererDDD
             IBooksOrderer idAutor = new ServiceOrderByAuthor();
             IBooksOrderer editionYear = new ServiceOrderByEditionYear();
 
+           
+
+            #endregion
+
+            #region Popular  
+
             ListBooks = new List<BookModel>();
+
+            
 
             ListBooks.Add(new BookModel(1, "Java How to Program", "Deitel & Deitel", 2007, true));
             ListBooks.Add(new BookModel(2, "Patterns of Enterprise Application Architecture", "Martin Fowler", 2002, true));
             ListBooks.Add(new BookModel(3, "Head First Design Patterns", "Elisabeth Freeman", 2004, true));
             ListBooks.Add(new BookModel(4, "Internet & World Wide Web: How to Program", "Deitel & Deitel", 2007, true));
 
+            #endregion
+
+            #region Ordenações
+
             int asc = Convert.ToInt32(ListOrderes.Asc);
             int desc = Convert.ToInt32(ListOrderes.Desc);
             int nop = Convert.ToInt32(ListOrderes.Nop);
 
+            #endregion
+
+
+
+            #region Testes
 
             //Teste Ascendente -------------------------------------------------
 
@@ -102,23 +127,18 @@ namespace ServiceBooksOrdererDDD
             ShowResultOrderByEmpty retBooks = new ShowResultOrderByEmpty();
             retBooks.ShowMeOrderByTests(retBooksNot, desc);
 
-
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("Fim dos testes antes da exceção. Favor conferir as saídas...Aperte qualquer tecla para continuar");
-            Console.ReadKey();
-
             //Nulo
 
-            Console.WriteLine("");
-            Console.WriteLine("||||||||||||||||||||||||||||||||||");
-            Console.WriteLine("|||       CONJUNTO NULO       ||||");
-            Console.WriteLine("||||||||||||||||||||||||||||||||||");
+            ShowResultOrderByNull retNull = new ShowResultOrderByNull();
+            retNull.ShowMeOrderByTests(null);          
 
             ListBooks = null;
 
             var retBooksNull = service.BooksOrderer(ListBooks, null, nop);
 
+            #endregion
+
+          
         }
     }
 }
