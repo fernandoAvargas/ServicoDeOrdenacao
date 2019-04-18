@@ -4,8 +4,8 @@ using System.Collections.Generic;
 
 namespace ServiceBooksOrdererDDD.SeviceBooksOrderer.Service.Service.Interface
 {
-    interface IBooksOrderer
+    public interface IBooksOrderer
     {
-        List<BookModel> BooksOrderer(List<BookModel> BookModel, int idOrder, int titleOrder, int authorOrder, int editOrder); 
+        List<BookModel> BooksOrderer(List<BookModel> BookModel, int order); 
     }
 }

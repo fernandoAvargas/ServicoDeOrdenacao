@@ -43,19 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="ServiceBooksOrderer.Test\GeneralTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceBooksOrder.Infra\ListOrderer\ListOrderes.cs" />
     <Compile Include="SeviceBooksOrderer.Model\BookModel.cs" />
     <Compile Include="SeviceBooksOrderer.Service\BooksOrderer.cs" />
     <Compile Include="SeviceBooksOrderer.Service\Service.Interface\IBooksOrderer.cs" />
+    <Compile Include="SeviceBooksOrderer.Service\ServiceBooksOrderer.Design\ServiceOrderByAuthor.cs" />
+    <Compile Include="SeviceBooksOrderer.Service\ServiceBooksOrderer.Design\ServiceOrderByEditionYear.cs" />
+    <Compile Include="SeviceBooksOrderer.Service\ServiceBooksOrderer.Design\ServiceOrdererById.cs" />
+    <Compile Include="SeviceBooksOrderer.Service\ServiceBooksOrderer.Design\ServiceOrdererByTitle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ServiceBooksOrderer.Domain\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
