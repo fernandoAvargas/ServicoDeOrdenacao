@@ -1,10 +1,7 @@
-﻿using System.Collections.Generic;
-
-namespace ServiceBooksOrdererDDD.SeviceBooksOrderer.Model
+﻿namespace ServiceBooksOrdererDDD.SeviceBooksOrderer.Model
 {
     public class BookModel
     {
-
         public BookModel()
         {
 
@@ -12,15 +9,15 @@ namespace ServiceBooksOrdererDDD.SeviceBooksOrderer.Model
 
         public int idBook { get; set; }
         public string title { get; set; }
-        public List<AuthorBookModel> AuthorBookModel { get; set; }
+        public string authorName { get; set; }
         public int editionYear { get; set; }
         public bool active { get; set; }
 
-        public BookModel(int idBook, string title, List<AuthorBookModel> AuthorBookModel, int editionYear, bool active)
+        public BookModel(int idBook, string title, string authorName, int editionYear, bool active)
         {
             this.idBook = idBook;
             this.title = title;
-            this.AuthorBookModel = AuthorBookModel;
+            this.authorName = authorName;
             this.editionYear = editionYear;
             this.active = active;
         }

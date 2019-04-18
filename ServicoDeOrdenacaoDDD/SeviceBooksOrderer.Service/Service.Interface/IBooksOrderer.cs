@@ -6,6 +6,6 @@ namespace ServiceBooksOrdererDDD.SeviceBooksOrderer.Service.Service.Interface
 {
     interface IBooksOrderer
     {
-        List<BookModel> BooksOrderer(List<BookModel> BookModel, int titleAsc, int authorAsc, int editAsc); 
+        List<BookModel> BooksOrderer(List<BookModel> BookModel, int idOrder, int titleOrder, int authorOrder, int editOrder); 
     }
 }
