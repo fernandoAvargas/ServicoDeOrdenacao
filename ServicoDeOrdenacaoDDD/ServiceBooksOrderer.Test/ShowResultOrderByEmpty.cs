@@ -1,12 +1,12 @@
-﻿using ServicoDeOrdenacaoDDD.ServiceBooksOrder.Infra.ListOrderer;
-using ServicoDeOrdenacaoDDD.ServiceBooksOrderer.Test.IServiceOrderTest;
+﻿using ServicoDeOrdenacaoDDD.ServiceBooksOrder.Domain.ListOrderer;
+using ServicoDeOrdenacaoDDD.ServiceBooksOrderer.Domain.IServiceOrderTest;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ServicoDeOrdenacaoDDD.ServiceBooksOrderer.Test
+namespace ServicoDeOrdenacaoDDD.ServiceBooksOrderer.Domain
 {
     class ShowResultOrderByEmpty : IServiceOrderShowTest
     {

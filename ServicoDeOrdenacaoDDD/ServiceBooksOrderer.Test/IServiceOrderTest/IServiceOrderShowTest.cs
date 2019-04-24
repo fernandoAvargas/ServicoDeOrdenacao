@@ -1,5 +1,5 @@
 ﻿
-namespace ServicoDeOrdenacaoDDD.ServiceBooksOrderer.Test.IServiceOrderTest
+namespace ServicoDeOrdenacaoDDD.ServiceBooksOrderer.Domain.IServiceOrderTest
 {
     public interface IServiceOrderShowTest
     {

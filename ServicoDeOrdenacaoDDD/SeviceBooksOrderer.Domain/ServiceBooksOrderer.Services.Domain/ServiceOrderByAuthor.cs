@@ -1,11 +1,11 @@
-﻿using ServiceBooksOrdererDDD.SeviceBooksOrderer.Model;
-using ServiceBooksOrdererDDD.SeviceBooksOrderer.Service.Service.Interface;
-using ServicoDeOrdenacaoDDD.ServiceBooksOrder.Infra.ListOrderer;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Linq;
+using System.Collections.Generic;
+using ServiceBooksOrdererDDD.SeviceBooksOrderer.Domain.SeviceBooksOrderer.Model;
+using ServicoDeOrdenacaoDDD.ServiceBooksOrder.Domain.ListOrderer;
+using ServiceBooksOrdererDDD.SeviceBooksOrderer.Service.Service.Interface;
 
-namespace ServicoDeOrdenacaoDDD.SeviceBooksOrderer.Service.ServiceBooksOrderer.Design
+namespace ServicoDeOrdenacaoDDD.SeviceBooksOrderer.Domain.ServiceBooksOrderer.Domain
 {
     public class ServiceOrderByAuthor : IBooksOrderer
     {
@@ -17,15 +17,11 @@ namespace ServicoDeOrdenacaoDDD.SeviceBooksOrderer.Service.ServiceBooksOrderer.D
 
             if (order == asc)
             {
-
                 ListBooks = BookModel.OrderBy(o => o.authorName).ToList<BookModel>();
-
             }
             else if (order == desc)
             {
-
                 ListBooks = BookModel.OrderByDescending(o => o.authorName).ToList<BookModel>();
-
             }
 
             return ListBooks;

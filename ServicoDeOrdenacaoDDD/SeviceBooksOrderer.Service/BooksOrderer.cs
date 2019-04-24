@@ -1,9 +1,10 @@
 ﻿
-using ServiceBooksOrdererDDD.SeviceBooksOrderer.Model;
+using ServiceBooksOrdererDDD.SeviceBooksOrderer.Domain.SeviceBooksOrderer.Model;
 using ServiceBooksOrdererDDD.SeviceBooksOrderer.Service.Service.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+
 
 namespace ServiceBooksOrdererDDD.SeviceBooksOrderer.Service
 {
@@ -29,9 +30,8 @@ namespace ServiceBooksOrdererDDD.SeviceBooksOrderer.Service
 
             catch (Exception)
             {
-
                 throw;
-            }
+            }              
         }
     }
 }

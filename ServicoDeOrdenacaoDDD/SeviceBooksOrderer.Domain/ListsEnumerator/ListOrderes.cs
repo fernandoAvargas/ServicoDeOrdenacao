@@ -1,7 +1,6 @@
 ﻿
-namespace ServicoDeOrdenacaoDDD.ServiceBooksOrder.Infra.ListOrderer
-{
- 
+namespace ServicoDeOrdenacaoDDD.ServiceBooksOrder.Domain.ListOrderer
+{ 
     public enum ListOrderes
     {
          Nop = 0,

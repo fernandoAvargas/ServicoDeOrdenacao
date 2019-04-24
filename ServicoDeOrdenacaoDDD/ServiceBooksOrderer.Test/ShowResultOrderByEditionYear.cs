@@ -1,9 +1,9 @@
 ﻿
 using System;
-using ServicoDeOrdenacaoDDD.ServiceBooksOrderer.Test.IServiceOrderTest;
-using ServicoDeOrdenacaoDDD.ServiceBooksOrder.Infra.ListOrderer;
+using ServicoDeOrdenacaoDDD.ServiceBooksOrderer.Domain.IServiceOrderTest;
+using ServicoDeOrdenacaoDDD.ServiceBooksOrder.Domain.ListOrderer;
 
-namespace ServicoDeOrdenacaoDDD.ServiceBooksOrderer.Test
+namespace ServicoDeOrdenacaoDDD.ServiceBooksOrderer.Domain
 {
     public class ShowResultOrderByEditionYear : IServiceOrderShowTest
     {

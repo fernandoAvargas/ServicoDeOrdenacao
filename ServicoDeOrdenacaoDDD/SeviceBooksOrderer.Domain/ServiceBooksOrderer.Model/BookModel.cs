@@ -1,4 +1,4 @@
-﻿namespace ServiceBooksOrdererDDD.SeviceBooksOrderer.Model
+﻿namespace ServiceBooksOrdererDDD.SeviceBooksOrderer.Domain.SeviceBooksOrderer.Model
 {
     public class BookModel
     {

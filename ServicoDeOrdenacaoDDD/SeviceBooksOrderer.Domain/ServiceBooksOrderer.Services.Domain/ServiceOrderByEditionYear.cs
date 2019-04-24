@@ -1,11 +1,11 @@
-﻿using ServiceBooksOrdererDDD.SeviceBooksOrderer.Model;
-using ServiceBooksOrdererDDD.SeviceBooksOrderer.Service.Service.Interface;
-using ServicoDeOrdenacaoDDD.ServiceBooksOrder.Infra.ListOrderer;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Linq;
+using System.Collections.Generic;
+using ServiceBooksOrdererDDD.SeviceBooksOrderer.Domain.SeviceBooksOrderer.Model;
+using ServicoDeOrdenacaoDDD.ServiceBooksOrder.Domain.ListOrderer;
+using ServiceBooksOrdererDDD.SeviceBooksOrderer.Service.Service.Interface;
 
-namespace ServicoDeOrdenacaoDDD.SeviceBooksOrderer.Service.ServiceBooksOrderer.Design
+namespace ServicoDeOrdenacaoDDD.SeviceBooksOrderer.Domain.ServiceBooksOrderer.Domain
 {
     public class ServiceOrderByEditionYear : IBooksOrderer
     {

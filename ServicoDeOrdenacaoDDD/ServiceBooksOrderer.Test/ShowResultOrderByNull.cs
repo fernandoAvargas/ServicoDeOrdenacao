@@ -1,11 +1,11 @@
-﻿using ServicoDeOrdenacaoDDD.ServiceBooksOrderer.Test.IServiceOrderTest;
+﻿using ServicoDeOrdenacaoDDD.ServiceBooksOrderer.Domain.IServiceOrderTest;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ServicoDeOrdenacaoDDD.ServiceBooksOrderer.Test
+namespace ServicoDeOrdenacaoDDD.ServiceBooksOrderer.Domain
 {
     public class ShowResultOrderByNull : IServiceOrderShowTest
     {
