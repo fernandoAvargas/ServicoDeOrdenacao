@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ServicoDeOrdenacaoDDD.ServiceBooksOrderer.Domain
 {
-    class ShowResultOrderByEmpty : IServiceOrderShowTest
+    public class ShowResultOrderByEmpty : IServiceOrderShowTest
     {
         int asc = Convert.ToInt32(ListOrderes.Asc);
         int desc = Convert.ToInt32(ListOrderes.Desc);

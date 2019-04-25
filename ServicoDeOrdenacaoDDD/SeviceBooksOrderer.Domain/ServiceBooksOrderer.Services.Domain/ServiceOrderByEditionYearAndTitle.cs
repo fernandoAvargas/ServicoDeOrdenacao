@@ -7,7 +7,7 @@ using ServiceBooksOrdererDDD.SeviceBooksOrderer.Domain.SeviceBooksOrderer.Model;
 
 namespace ServicoDeOrdenacaoDDD.SeviceBooksOrderer.Domain.ServiceBooksOrderer.Services.Domain
 {
-    public class ServiceOrderByTitleAndIdAndAuthor : IBooksOrderer
+    public class ServiceOrderByEditionYearAndTitle : IBooksOrderer
     {
         public List<BookModel> BooksOrderer(List<BookModel> BookList, int order)
         {
@@ -18,12 +18,13 @@ namespace ServicoDeOrdenacaoDDD.SeviceBooksOrderer.Domain.ServiceBooksOrderer.Se
             if (order == asc)
             {
                 ListBooks = (from o in BookList
-                             orderby o.title ascending, o.idBook descending, o.authorName descending
+                             orderby o.editionYear ascending, o.title descending
                              select o).ToList();
             }
             else if (order == desc)
             {
-                ListBooks = BookList.OrderByDescending(o => o.title).ThenBy(o => o.idBook).ThenBy(o => o.authorName).ToList();
+
+                ListBooks = BookList.OrderByDescending(o => o.editionYear).ThenBy(o => o.title).ToList();
             }
 
             return ListBooks;

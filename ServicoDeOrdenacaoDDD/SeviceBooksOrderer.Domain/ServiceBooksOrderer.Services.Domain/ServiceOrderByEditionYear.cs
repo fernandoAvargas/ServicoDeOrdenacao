@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Linq;
 using System.Collections.Generic;
-using ServiceBooksOrdererDDD.SeviceBooksOrderer.Domain.SeviceBooksOrderer.Model;
 using ServicoDeOrdenacaoDDD.ServiceBooksOrder.Domain.ListOrderer;
 using ServiceBooksOrdererDDD.SeviceBooksOrderer.Service.Service.Interface;
+using ServiceBooksOrdererDDD.SeviceBooksOrderer.Domain.SeviceBooksOrderer.Model;
 
 namespace ServicoDeOrdenacaoDDD.SeviceBooksOrderer.Domain.ServiceBooksOrderer.Domain
 {

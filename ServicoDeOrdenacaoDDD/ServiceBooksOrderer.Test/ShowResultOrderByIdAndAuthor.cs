@@ -2,11 +2,11 @@
 using ServicoDeOrdenacaoDDD.ServiceBooksOrder.Domain.ListOrderer;
 using ServicoDeOrdenacaoDDD.ServiceBooksOrderer.Domain.IServiceOrderTest;
 
-namespace ServicoDeOrdenacaoDDD.ServiceBooksOrderer.Domain
+namespace ServicoDeOrdenacaoDDD.ServiceBooksOrderer.Test
 {
-    public class ShowResultOrderByBook : IServiceOrderShowTest
+    class ShowResultOrderByIdAndAuthor : IServiceOrderShowTest
     {
-        public void ShowMeOrderByTests(dynamic result , int order)
+        public void ShowMeOrderByTests(dynamic result, int order)
         {
             int asc = Convert.ToInt32(ListOrderes.Asc);
             int desc = Convert.ToInt32(ListOrderes.Desc);
@@ -15,10 +15,10 @@ namespace ServicoDeOrdenacaoDDD.ServiceBooksOrderer.Domain
 
             Console.WriteLine("||||||||||||||||||||||||||||||||||");
 
-            if (order == asc) 
-                Console.WriteLine("||||   LIVRO ID ASCENDENTE    ||||");
-         
-            if(order == desc)
+            if (order == asc)
+                Console.WriteLine("||||   LIVRO ID AND AUTOR ASCENDENTE    ||||");
+
+            if (order == desc)
                 Console.WriteLine("||||   LIVRO ID DESCENDENTE   ||||");
 
             Console.WriteLine("||||||||||||||||||||||||||||||||||");

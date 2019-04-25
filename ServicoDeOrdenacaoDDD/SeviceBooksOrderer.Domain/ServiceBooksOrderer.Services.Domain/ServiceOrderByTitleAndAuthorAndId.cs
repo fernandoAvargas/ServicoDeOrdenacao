@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Linq;
 using System.Collections.Generic;
-using ServiceBooksOrdererDDD.SeviceBooksOrderer.Domain.SeviceBooksOrderer.Model;
 using ServicoDeOrdenacaoDDD.ServiceBooksOrder.Domain.ListOrderer;
 using ServiceBooksOrdererDDD.SeviceBooksOrderer.Service.Service.Interface;
+using ServiceBooksOrdererDDD.SeviceBooksOrderer.Domain.SeviceBooksOrderer.Model;
 
 namespace ServicoDeOrdenacaoDDD.SeviceBooksOrderer.Domain.ServiceBooksOrderer.Services.Domain
 {
@@ -18,13 +18,13 @@ namespace ServicoDeOrdenacaoDDD.SeviceBooksOrderer.Domain.ServiceBooksOrderer.Se
             if (order == asc)
             {
                 ListBooks = (from o in BookList
-                             orderby o.title, o.authorName, o.idBook
+                             orderby o.title ascending, o.authorName descending, o.idBook descending
                              select o).ToList();
             }
             else if (order == desc)
             {
 
-                ListBooks = BookList.OrderByDescending(o => o.title).ThenByDescending(o => o.authorName).ThenByDescending(o => o.idBook).ToList();
+                ListBooks = BookList.OrderByDescending(o => o.title).ThenBy(o => o.authorName).ThenBy(o => o.idBook).ToList();
             }
 
             return ListBooks;
