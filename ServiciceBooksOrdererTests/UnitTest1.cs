@@ -503,6 +503,36 @@ namespace ServiciceBooksOrdererTests
             var resultado = service.BooksOrderer(Popular(), NumeroDoLivroDescTitluloAscEautorAsc, ordenacao);
         }
 
+        [TestMethod]
+        public void OrdenarUmCojuntoVazio()
+        {
+            int ordenacao = Convert.ToInt32(ListOrderes.Asc);
+
+            List<BookModel> ConjuntoVazio = new List<BookModel>();
+
+            SeviceBooksOrderer service = new SeviceBooksOrderer();
+
+            IBooksOrderer Empty = new ServiceOrderById();
+
+            var resultado = service.BooksOrderer(ConjuntoVazio, Empty, ordenacao);      }
+
+
+        [TestMethod]
+        public void OrdenarConjuntoNuloTemQueDarOrderbyException()
+        {
+            int ordenacao = Convert.ToInt32(ListOrderes.Asc);
+
+            SeviceBooksOrderer service = new SeviceBooksOrderer();
+
+            List<BookModel> ConjuntoNulo = null;
+
+            IBooksOrderer Empty = new ServiceOrderById();
+
+            IBooksOrderer NumeroDoLivroDescTitluloAscEautorAsc = new ServiceOrderByIdAndTitleAndAuthor();
+
+            var resultado = service.BooksOrderer(ConjuntoNulo, Empty, ordenacao);
+        }
+
 
 
 
