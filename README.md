@@ -2,7 +2,7 @@
 
 # Serviço de Ordenação de Livros
 
-### O Servico de Ordenacao de Livros é um exemplo de uma aplicação em camadas que segue os Padrões de Projeto onde são utilizadas boas práticas como o Design Pattern Strategy e a camada de testes unitários. É o que mais aproxima-se dos sistemas utilizados nas empresas. É claro que antes não existiram as melhores práticas, mas se trata de uma evolução que precisa ser seguida e que além de funcionar melhor irá proporcionar maior facilidade de entendimento, de manutenção e segurança.  
+### O Serviço de Ordenação de Livros é um exemplo de uma aplicação em camadas que segue os Padrões de Projeto onde são utilizadas boas práticas como o Design Pattern Strategy e a camada de testes unitários. É o que mais aproxima-se dos sistemas utilizados nas empresas. É claro que antes não existiram as melhores práticas, mas se trata de uma evolução que precisa ser seguida e que além de funcionar melhor irá proporcionar maior facilidade de entendimento, de manutenção e segurança.  
 
 
 ### Apresentação do Servoço de Ordenação
