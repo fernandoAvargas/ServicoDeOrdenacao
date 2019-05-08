@@ -9,11 +9,11 @@
 
 ![Dados do Serviço](https://user-images.githubusercontent.com/24196482/57403824-e7e15d80-71b0-11e9-80fe-b0eeb3a009fa.png)
 
-### Resultados das ordenações simuladas conforme cenários pre estabelecidos
+### Resultados das ordenações simuladas conforme cenários preestabelecidos.
 
 ![Ordenançãodos Livros](https://user-images.githubusercontent.com/24196482/57403826-e7e15d80-71b0-11e9-8079-113093b3d000.png)
 
-### Testes Unitários Utilizando o Unity Framework
+### Testes Unitários Utilizando o Unity Framework com trinta e tres cenários positivos e um negativo.
 
 ![Testes de Ordenação](https://user-images.githubusercontent.com/24196482/57403827-e7e15d80-71b0-11e9-81cc-3a1a530d5163.png)
 
