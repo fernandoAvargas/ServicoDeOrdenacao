@@ -5,7 +5,7 @@
 ### O Servico de Ordenacao de Livros é um exemplo de uma aplicação em camadas que segue os Padrões de Projeto onde é utilizado o Design Patern Strategy e a camada de testes unitários. É o que mais aproxima-se dos sistemas utilizados nas empresas. É claro que antes não existiram as melhores práticas, mas se trata de uma evolução que precisa ser seguida e que além de funcionar melhor irá proporcionar maior facilidade de entendimento, de manutenção e segurança.  
 
 
-### Apresentação do Servoçõ de Ordenação
+### Apresentação do Servoço de Ordenação
 
 ![Dados do Serviço](https://user-images.githubusercontent.com/24196482/57403824-e7e15d80-71b0-11e9-80fe-b0eeb3a009fa.png)
 
