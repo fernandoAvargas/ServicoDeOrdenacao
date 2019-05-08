@@ -15,11 +15,11 @@ namespace ServicoDeOrdenacaoDDD.ServiceBooksOrderer.Domain.Docs
             Console.Write("");
             Console.WriteLine("Versão: 1.1".ToMarkdownParagraph());
             Console.Write("");
-            Console.WriteLine("Solicitantes: MGN / FGV".ToMarkdownParagraph());
+            Console.WriteLine("Solicitantes: Fictícios S/A".ToMarkdownParagraph());
             Console.WriteLine("Desenvolvedor: Fernando de Assis Vargas".ToMarkdownParagraph());
             Console.WriteLine("Data: 18/04/2019".ToMarkdownParagraph());
             Console.WriteLine("-------------------------------------------------------------------------");
-            Console.WriteLine("Descrição do sistemas: ".ToMarkdownParagraph());
+            Console.WriteLine("Descrição do serviço: ".ToMarkdownParagraph());
             Console.WriteLine("-------------------------------------------------------------------------");
             Console.WriteLine("Ordernação conforme solicitação do cliente do serviço".ToMarkdownParagraph());
             Console.WriteLine("");

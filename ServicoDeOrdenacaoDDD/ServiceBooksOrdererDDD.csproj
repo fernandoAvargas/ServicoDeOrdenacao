@@ -59,7 +59,7 @@
     <Compile Include="ServiceBooksOrderer.Test\ShowResultOrderByBook.cs" />
     <Compile Include="ServiceBooksOrderer.Test\ShowResultOrderByEditionYear.cs" />
     <Compile Include="ServiceBooksOrderer.Test\ShowResultOrderByIdAndTitle.cs" />
-    <Compile Include="ServiceBooksOrderer.Test\ShowResultOrderByNull.cs" />
+    <Compile Include="ServiceBooksOrderer.Test\ShowResultOrderByEnd.cs" />
     <Compile Include="ServiceBooksOrderer.Test\ShowResultOrderByTitle.cs" />
     <Compile Include="SeviceBooksOrderer.Domain\ServiceBooksOrderer.Model\BookModel.cs" />
     <Compile Include="SeviceBooksOrderer.Domain\ServiceBooksOrderer.Services.Domain\ServiceOrderByAuthorAndEditionYearAndId.cs" />

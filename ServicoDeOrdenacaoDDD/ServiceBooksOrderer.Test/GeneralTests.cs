@@ -12,8 +12,6 @@ using ServicoDeOrdenacaoDDD.SeviceBooksOrderer.Domain.ServiceBooksOrderer.Servic
 
 namespace ServiceBooksOrdererDDD
 {
-
-
     class Program
     {
         static List<BookModel> ListBooks;      
@@ -527,14 +525,9 @@ namespace ServiceBooksOrdererDDD
             ShowResultOrderByEmpty retBooks = new ShowResultOrderByEmpty();
             retBooks.ShowMeOrderByTests(retBooksNot, desc);
 
-            //Nulo
+            //Fim
 
-            ShowResultOrderByNull retNull = new ShowResultOrderByNull();
-            retNull.ShowMeOrderByTests(null);
-
-            ListBooks = null;
-
-            var retBooksNull = service.BooksOrderer(ListBooks, null, nop);
+            ShowResultOrderByEnd.ShowMeOrderByEnd();          
 
       //  #endregion
 

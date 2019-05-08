@@ -7,19 +7,15 @@ using System.Threading.Tasks;
 
 namespace ServicoDeOrdenacaoDDD.ServiceBooksOrderer.Domain
 {
-    public class ShowResultOrderByNull : IServiceOrderShowTest
+    public static class ShowResultOrderByEnd 
     {
-        public void ShowMeOrderByTests(dynamic result, int order = 0)
+        public static void ShowMeOrderByEnd()
         {
             Console.WriteLine("");
             Console.WriteLine("");
             Console.WriteLine("Fim dos testes antes da exceção. Favor conferir as saídas...Aperte qualquer tecla para continuar");
             Console.ReadKey();
-
-            Console.WriteLine("");
-            Console.WriteLine("||||||||||||||||||||||||||||||||||");
-            Console.WriteLine("|||       CONJUNTO NULO       ||||");
-            Console.WriteLine("||||||||||||||||||||||||||||||||||");
+           
         }
     }
 }
